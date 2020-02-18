@@ -1,6 +1,6 @@
 node {
 stage('Git-Checkout') {
-   git 'https://github.com/natam369/mobilestore.git'
+   git 'https://github.com/natam369/store.git'
   }
     stage('Maven-Clean') {
    sh label: '', script: 'mvn clean'
