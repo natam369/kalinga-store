@@ -25,7 +25,7 @@
   - name: Remove ROOT folder initially
     command: rm -rf /opt/SP/apps/tomcat/webapps/ROOT
 
-  - name: Copy Petclinic Project War Files
+  - name: Copy  Project War Files
     copy: src=../target/mobliestore-1-0.0.1-SNAPSHOT.war dest=/opt/SP/apps/tomcat/webapps/ROOT.war mode=0644
     notify: 
     - Restart Tomcat
