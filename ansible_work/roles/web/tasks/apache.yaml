@@ -1,0 +1,6 @@
+---
+- name: Install Apache2 Packages 
+  apt:  name=apache2 state=present
+
+- name: Start Apache Service
+  service: name=apache2 state=started enabled=true

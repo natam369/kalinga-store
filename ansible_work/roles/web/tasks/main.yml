@@ -1,0 +1,5 @@
+---
+# tasks file for web
+- include: 'apache.yaml'
+- include: 'java.yaml'
+- include: 'tomcat.yaml'
