@@ -1,6 +1,6 @@
 node {
 stage('Git-Checkout') {
-   git 'https://github.com/natam369/store.git'
+   git 'https://github.com/natam369/kalinga-store.git'
   }
     stage('Maven-Clean') {
    sh label: '', script: 'mvn clean'
@@ -17,7 +17,7 @@ stage('Git-Checkout') {
    stage('Maven-Package') {
    sh label: '', script: 'mvn package'
   }
-  def project_path="ansible/"
+  def project_path="ansible_work/"
  dir(project_path) {
   stage('Ansible')
   {
