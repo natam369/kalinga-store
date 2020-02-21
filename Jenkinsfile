@@ -17,7 +17,7 @@ stage('Git-Checkout') {
    stage('Maven-Package') {
    sh label: '', script: 'mvn package'
   }
-  def project_path="ansible/"
+  def project_path="ansible_work/"
  dir(project_path) {
   stage('Ansible')
   {
