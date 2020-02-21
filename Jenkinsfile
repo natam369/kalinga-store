@@ -1,6 +1,6 @@
 node {
 stage('Git-Checkout') {
-   git 'https://github.com/natam369/store.git'
+   git 'https://github.com/natam369/kalinga-store.git'
   }
     stage('Maven-Clean') {
    sh label: '', script: 'mvn clean'
