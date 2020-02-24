@@ -21,7 +21,7 @@ stage('Git-Checkout') {
  dir(project_path) {
   stage('Ansible')
   {
-  sh label: 'ansible', script: 'ansible-playbook -i inventory -u ubuntu --key /root/.ssh/coekey.pem coeplaybook.yaml'
+  sh label: 'ansible', script: 'ansible-playbook -i inventory -u ubuntu --key /root/.ssh/coe.pem coeplaybook.yaml'
   }
   }
 }
